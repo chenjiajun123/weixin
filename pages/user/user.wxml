@@ -1,0 +1,30 @@
+<view id="user">
+  <view class="user-skin" style="background-image:url({{skin}})">
+  <block wx:if="{{userInfo!=''}}">
+    <view class="user-skin-icon" bindtap='viewSkin'>
+    </view>
+    <image class="user-avatar" src='{{userInfo.avatarUrl}}'></image>
+    <view class="user-name">
+      {{userInfo.nickName}}
+      <block wx:if="{{userInfo.gender==1}}">
+        <view class="user-sex-male">
+        </view>
+      </block>
+      <block wx:elif="{{userInfo.gender==1}}">
+        <view class="user-sex-female"></view>
+      </block>
+    </view>
+    <view class="user-location">{{userInfo.province}},{{userInfo.city}}</view>
+    </block>
+    <button open-type='getUserInfo' bindgetuserinfo='getUserInfo' wx:if="{{userInfo==''}}" class="login-btn">登录</button>
+  </view>
+  <view class="grids">
+    <block wx:for="{{gridList}}" wx:for-item="gridItem" wx:for-index="gridIndex" wx:key="grid">
+      <view class="grid" data-url="{{gridItem.enName}}" bindtap='viewGridDetail'>
+        <view class="grid-icon grid-icon-{{gridItem.enName}}">
+        </view>
+        <view class="grid-title">{{gridItem.zhName}}</view>
+      </view>
+    </block>
+  </view>
+</view>

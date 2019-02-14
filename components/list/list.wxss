@@ -1,0 +1,35 @@
+page{
+  background-color: #f4f4f4;
+}
+.cells{
+  margin:20rpx 0;
+  position: relative;
+  background-color: #fff;
+  overflow: hidden;
+}
+.cells .cell:first-child{
+  border-top: solid 1px #e3e3e3;
+}
+.cell{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  box-sizing: border-box;
+  width: 750rpx;
+  font-size: 32rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  padding:0 40rpx;
+  border-bottom: solid 1px #e3e3e3;
+}
+.cell-access .cell-ft{
+  color:#666;
+}
+.cell-access .cell-ft::after{
+  content: '>';
+  display: inline-block;
+  color:#666;
+}
+.cell-ft{
+  color:#bbb;
+}

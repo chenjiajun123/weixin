@@ -1,0 +1,66 @@
+{
+  "pages": [
+    "pages/popular/popular",
+    "pages/coming/coming",
+    "pages/top/top",
+    "pages/user/user",
+    "pages/skin/skin",
+    "pages/setting/setting",
+    "pages/systemInfo/systemInfo",
+    "pages/personInfo/personInfo",
+    "pages/editInfo/editInfo",
+    "pages/gallery/gallery",
+    "pages/location/location",
+    "pages/search/search",
+    "pages/searchResult/searchResult",
+    "pages/filmDetail/filmDetail",
+    "pages/personDetail/personDetail",
+    "pages/favorite/favorite",
+    "pages/history/history"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#47a86c",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "电影推荐",
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "dark",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#686868",
+    "selectedColor": "#47a86c",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/popular/popular",
+        "iconPath": "assets/images/popular_icon.png",
+        "selectedIconPath": "assets/images/popular_active_icon.png",
+        "text": "热映"
+      },
+      {
+        "pagePath": "pages/coming/coming",
+        "iconPath": "assets/images/coming_icon.png",
+        "selectedIconPath": "assets/images/coming_active_icon.png",
+        "text": "待映"
+      },
+      {
+        "pagePath": "pages/top/top",
+        "iconPath": "assets/images/top_icon.png",
+        "selectedIconPath": "assets/images/top_active_icon.png",
+        "text": "口碑"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "assets/images/my_icon.png",
+        "selectedIconPath": "assets/images/my_active_icon.png",
+        "text": "我的"
+      }
+    ]
+  },
+    "permission": { 
+      "scope.userLocation": {
+        "desc": "你的位置信息将用于小程序位置接口的效果展示"
+      }
+    }
+}

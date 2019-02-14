@@ -1,0 +1,8 @@
+<view id="skin-list">
+  <block wx:for="{{skinList}}" wx:for-item="skinItem" wx:for-index="skinIndex" wx:key="skin">
+    <view class="skin-item {{nowSkin == skinItem.imgUrl ? 'skin-item-active' : ''}}" bindtap='chooseSkin' data-url="{{skinItem.imgUrl}}">
+      <image src='{{skinItem.imgUrl}}' class="skin-img"></image>
+      <view class="skin-title">{{skinItem.title}}</view>
+    </view>
+  </block>
+</view>

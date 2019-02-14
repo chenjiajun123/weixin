@@ -1,0 +1,51 @@
+/* pages/editInfo/editInfo.wxss */
+.form-list{
+  margin-bottom: 20rpx;
+}
+.form-list .form-item{
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  width: 100%;
+  padding:15rpx 40rpx;
+  align-items: center;
+  border-bottom: solid 1px #e3e3e3;
+  font-size: 32rpx;
+}
+.form-list:first-child{
+  margin-top: 20rpx;
+}
+.form-list .form-item:first-child{
+  border-top: solid 1px #e3e3e3;
+}
+.form-list .form-item .form-item-hd{
+  width:150rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.form-list .form-item .form-item-bd{
+  flex:1;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.form-item-hd input{
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fff;
+  padding:0 15rpx;
+  font-size: 32rpx;
+}
+.hidden{
+  display: none;
+}
+.edit-btn {
+    width: 300rpx;
+    height: 80rpx;
+    margin: 0 auto;
+    font-size: 32rpx;
+    text-align: center;
+    line-height: 80rpx;
+    background-color: #47a86c;
+    border-radius: 80rpx;
+    color: #fff;
+}

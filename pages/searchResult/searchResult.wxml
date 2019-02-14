@@ -1,0 +1,8 @@
+<import src="../../components/nullTip/nullTip.wxml"/>
+<import src="../../components/filmList/filmList.wxml"/>
+<block wx:if="{{isNull}}">
+    <template is="nullTip" data="{{nullTip: nullTip}}"/>
+</block>
+<block wx:else>
+    <template is="filmList" data="{{films: films, hasMore: hasMore, showLoading: showLoading}}"/>
+</block>

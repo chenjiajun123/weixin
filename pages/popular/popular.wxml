@@ -1,0 +1,16 @@
+<block wx:if="{{!showLoading}}">
+  <view class="search-bar">
+    <input type='text' class="search-txt" plxaceholder-class='search-txt-plc' placeholder='请输入关键词搜索' bindfocus='viewSearch' />
+  </view>
+  <swiper class="banner" indicator-dots="true" autoplay="true">
+    <block wx:for="{{bannerList}}" wx:for-item="bannerItem" wx:for-index="bannerIndex" wx:key="banner">
+      <swiper-item data-type="{{bannerItem.type}}" data-id="{{bannerItem.id}}" bindtap="viewBannerDetail">
+        <image src="{{bannerItem.imgUrl}}" class="banner-item"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</block>
+<import src="../../components/filmList/filmList.wxml" />
+<template is="filmList" data="{{showLoading:showLoading,films:films,hasMore:hasMore}}"></template>
+<import src="../../components/message/message.wxml" />
+<template is="message" data="{{message:message}}"></template>
